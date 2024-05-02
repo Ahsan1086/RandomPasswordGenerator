@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="Signup.css">
+</head>
+<body>
+<header>
+     <!-- <h2 class="logo"><img src="1.webp" alt="" height="50" width="50"></h2> -->
+     <h2 class="logo"><a href="">Ahsan</a></h2>
+   <nav class="navigation">
+        <a href="index.html">Home</a> 
+        <a href="services.html">Services</a>
+        <a href="About.html">About</a>
+        <a href="contact.html">Contact</a>
+        <button class="btnLogin">Login</button>
+        <button class="btnColor" onclick="bgColorr()">BackGround</button>
+    </nav>
+</header>
+<div class="wrapper">
+    <div class="form-box login" style="padding: 50px; align-items: center;">
+            <h2 style="font-size: 50px; text-align: center;"><b>Login<b></h2>
+            <form action="#">
+                <div class="input-box" >
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" required >
+                 
+                 </div><hr style="height: 10px; border: none;">
+                 <div class="input-box">
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" required >
+                    
+                 </div> <hr style="height: 10px; border: none;">
+                 <div style=" display:flex; justify-content: space-between;">
+                   
+                    <label for="remember"> <input id="remember" type="checkbox">Remember Me</label>
+                    <a href="">Forget Password?</a>
+                 </div>
+                 <hr style="height: 10px; border: none;">
+                 <div>
+                    <button type="submit" class="btn"><b>Login<b></button>
+                 </div>
+                 <hr style="height: 10px; border: none;">
+                 <div class="login-to-register" style="text-align: center;">
+                    <p>Don't have an account? <a href="register.html"><i>Register<i></a></p>
+                 </div>
+            </form>
+    </div>
+
+</div>
+
+<script>
+  function bgColorr()
+      {
+          var red =Math.floor(Math.random()*256);
+          var green =Math.floor(Math.random()*256);
+          var blue =Math.floor(Math.random()*256);
+          var color="rgb(" + red + " , " + green + ", " + blue + ")";
+          document.body.style.backgroundColor = color;
+      
+      }
+    </script>
+</body>
+</html>
